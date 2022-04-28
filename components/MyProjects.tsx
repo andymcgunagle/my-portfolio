@@ -76,7 +76,7 @@ const Pill = styled.span`
 export default function MyProjects() {
   return (
     <Wrapper>
-      {projects.map((project) => (
+      {projects.map((project, index) => (
         <Project key={project.name}>
           <Header>
             <a
@@ -108,6 +108,7 @@ export default function MyProjects() {
               layout="responsive"
               src={project.image.src}
               width={project.image.width}
+              priority={index === 0 && true}
             />
           </ImageWrapper>
 

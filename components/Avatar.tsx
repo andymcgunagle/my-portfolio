@@ -23,6 +23,7 @@ export default function Avatar() {
         layout="responsive"
         width={640}
         height={635}
+        priority={true}
       />
     </Wrapper>
   );
