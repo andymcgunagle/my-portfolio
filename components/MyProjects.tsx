@@ -80,10 +80,12 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-
+  
   padding-inline: 1rem;
-
+  
   @media only screen and (min-width: 768px) {
+    justify-content: center;
+    
     padding-inline: 2rem;
   }
 `;
@@ -95,10 +97,6 @@ const Pill = styled.span`
   padding: 0.125rem 1rem;
   width: fit-content;
   font-size: var(--font-size-0);
-  
-  @media only screen and (min-width: 768px) {
-    font-size: var(--font-size-2);
-  }
 `;
 
 export default function MyProjects() {
