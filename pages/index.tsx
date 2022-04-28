@@ -2,8 +2,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import styled from 'styled-components';
-import Avatar from '../components/Avatar';
 
+import Avatar from '../components/Avatar';
 import MyLinks from '../components/MyLinks';
 import MyProjects from '../components/MyProjects';
 
@@ -15,20 +15,43 @@ const Wrapper = styled.main`
   margin-inline: auto;
   max-width: 600px;
   width: calc(100vw - 2rem);
-
-  `;
+`;
 
 const Container = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   
   & h1 {
-    font-size: 2rem;
+    font-size: var(--font-size-6);
   }
-
+  
   & p {
+    display: flex;
+    flex-direction: column;
+    
     font-weight: var(--font-weight-2);
+  }
+  
+  & p span {
+    font-size: var(--font-size-0);
+  }
+  
+  @media only screen and (min-width: 768px) {
+    & h1 {
+      font-size: var(--font-size-10);
+    }
+    
+    & p {
+      flex-direction: row;
+      gap: 0.25rem;
+      align-items: center;
+    }
+
+    & p span {
+      font-size: var(--font-size-2);
+    }
   }
 `;
 
@@ -48,7 +71,8 @@ const Home: NextPage = () => {
               Andy McGunagle
             </h1>
             <p>
-              Software engineer based in San Diego, CA.
+              <span>Software engineer based in </span>
+              <span>San Diego, CA ☀️</span>
             </p>
           </div>
         </Container>

@@ -16,13 +16,18 @@ const Wrapper = styled.div`
 const Header = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 0.25rem;
-  
-  padding-inline: 2rem;
 
+  padding-inline: 1rem;
+  
   & > .github-repo-link {
     text-decoration: underline;
     text-underline-offset: 0.125rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding-inline: 2rem;
   }
 `;
 
@@ -32,7 +37,13 @@ const Heading = styled.h2`
   gap: 0.25rem;
 
   & * {
-    font-size: 1.5rem;
+    font-size: var(--font-size-2);
+  }
+  
+  @media only screen and (min-width: 768px) {
+    & * {
+      font-size: var(--font-size-6);
+    }
   }
 `;
 
@@ -44,13 +55,21 @@ const Project = styled.div`
   border-radius: var(--border-radius-4);
   border: var(--border-width-0) solid var(--color-gray-200);
   box-shadow: var(--box-shadow-6);
-  padding-block: 2rem;
+  padding-block: 1rem;
+
+  @media only screen and (min-width: 768px) {
+    padding-block: 2rem;
+  }
 `;
 
 const Description = styled.p`
   white-space: pre-wrap;
   font-size: var(--font-size-0);
-  padding-inline: 2rem;
+  padding-inline: 1rem;
+  
+  @media only screen and (min-width: 768px) {
+    padding-inline: 2rem;
+  }
 `;
 
 const ImageWrapper = styled.div`
@@ -62,7 +81,11 @@ const Container = styled.div`
   flex-wrap: wrap;
   gap: 0.5rem;
 
-  padding-inline: 2rem;
+  padding-inline: 1rem;
+
+  @media only screen and (min-width: 768px) {
+    padding-inline: 2rem;
+  }
 `;
 
 const Pill = styled.span`
@@ -71,6 +94,11 @@ const Pill = styled.span`
   height: fit-content;
   padding: 0.125rem 1rem;
   width: fit-content;
+  font-size: var(--font-size-0);
+  
+  @media only screen and (min-width: 768px) {
+    font-size: var(--font-size-2);
+  }
 `;
 
 export default function MyProjects() {
