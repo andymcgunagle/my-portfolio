@@ -1,0 +1,63 @@
+input {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-0);
+  border: var(--border-width-2) solid var(--color-gray-300);
+  line-height: 1;
+  padding: 0.25rem 0.75rem;
+  transition-duration: var(--duration-2);
+  transition-property: background-color, border-bottom, border-color;
+  transition-timing-function: ease-in;
+  width: 100%;
+}
+  
+input:focus {
+  background-color: var(--color-brand-light);
+  border: var(--border-width-2) solid var(--color-brand-dark);
+  color: var(--color-brand-dark) !important;
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--color-gray-300);
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+/* Rounded */
+
+input.rounded {
+  border-radius: var(--border-radius-full);
+  padding: 0.25rem 1rem;
+}
+
+/* With Icon */
+
+div.input-with-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  width: 100%;
+}
+
+div.input-with-icon-wrapper > .material-icons-round {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+
+  font-size: var(--font-size-6);
+  opacity: 0.25;
+  transform: translateY(-50%);
+}
+
+div.input-with-icon-wrapper:focus-within > .material-icons-round {
+  color: var(--color-brand-dark) !important;
+  opacity: 0.5;
+}
+
+input.with-icon {
+  padding-left: 2.5rem;
+}

@@ -1,0 +1,25 @@
+button.text {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  color: var(--color-brand) !important;
+  transition-duration: var(--duration-2);
+  transition-property: background-color, border-color, color;
+  transition-timing-function: ease-in;
+}
+  
+button.text.accent {
+  color: var(--color-accent) !important;
+}
+
+button.text.danger {
+  color: var(--color-danger) !important;
+}
+    
+button.text.success {
+  color: var(--color-success) !important;
+}
+
+button.text.warning {
+  color: var(--color-warning) !important;
+}

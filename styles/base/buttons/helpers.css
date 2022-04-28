@@ -1,0 +1,14 @@
+button.rounded {
+  border-radius: var(--border-radius-full);
+}
+
+button.with-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+button.with-icon > .material-icons-round {
+  font-size: inherit;
+}

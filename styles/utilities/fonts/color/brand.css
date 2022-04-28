@@ -1,0 +1,11 @@
+.clr-brand-light {
+  color: var(--color-brand-light) !important;
+}
+
+.clr-brand {
+  color: var(--color-brand) !important;
+}
+
+.clr-brand-dark {
+  color: var(--color-brand-dark) !important;
+}

@@ -1,0 +1,111 @@
+:root {
+  /* Animations */
+  --animation-blink: blink 1s cubic-bezier(0, 0, 0.3, 1) infinite;
+  --animation-bounce: bounce 2s cubic-bezier(0.5, -.3, 0.1, 1.5) infinite;
+  --animation-fade-in: fade-in 0.5s ease-in;
+  --animation-fade-out: fade-out 0.5s ease-in;
+  --animation-float: float 3s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  --animation-ping: ping 5s cubic-bezier(0, 0, 0.3, 1) infinite;
+  --animation-pulse: pulse 2s cubic-bezier(0, 0, 0.3, 1) infinite;
+  --animation-scale-down: scale-down 0.5s ease-in;
+  --animation-scale-up: scale-up 0.5s ease-in;
+  --animation-shake-x: shake-x 0.75s cubic-bezier(0, 0, 0, 1);
+  --animation-shake-y: shake-y 0.75s cubic-bezier(0, 0, 0, 1);
+  --animation-slide-in-down: slide-in-down 0.5s ease-in;
+  --animation-slide-in-left: slide-in-left 0.5s ease-in;
+  --animation-slide-in-right: slide-in-right 0.5s ease-in;
+  --animation-slide-in-up: slide-in-up 0.5s ease-in;
+  --animation-slide-out-down: slide-out-down 0.5s ease-in;
+  --animation-slide-out-left: slide-out-left 0.5s ease-in;
+  --animation-slide-out-right: slide-out-right 0.5s ease-in;
+  --animation-slide-out-up: slide-out-up 0.5s ease-in;
+  --animation-spin: spin 2s linear infinite;
+
+  /* Border Radius */
+  --border-radius-0: 0.25rem;
+  --border-radius-2: 0.375rem;
+  --border-radius-4: 0.5rem;
+  --border-radius-6: 0.75rem;
+  --border-radius-8: 1rem;
+  --border-radius-10: 1.5rem;
+  --border-radius-full: 9999px;
+
+  /* Border Width */
+  --border-width-0: 1px;
+  --border-width-2: 2px;
+  --border-width-4: 4px;
+  --border-width-6: 6px;
+  --border-width-8: 8px;
+  --border-width-10: 10px;
+
+  /* Box Shadows */
+  --box-shadow-0: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --box-shadow-2: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --box-shadow-4: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --box-shadow-6: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --box-shadow-8: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --box-shadow-10: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  
+  /* Breakpoints */
+  --breakpoint-0: 480px;
+  --breakpoint-2: 640px;
+  --breakpoint-4: 768px;
+  --breakpoint-6: 1280px;
+  --breakpoint-8: 1280px;
+  --breakpoint-10: 1536px;
+
+  /* Color - Brand */
+  --color-brand-light: #dbeafe;
+  --color-brand: #2563eb;
+  --color-brand-dark: #1e40af;
+  
+  /* Color - Accent */
+  --color-accent-light: #f3e8ff;
+  --color-accent: #7c3aed;
+  --color-accent-dark: #6b21a8;
+
+  /* Color - Success */
+  --color-success-light: #dcfce7;
+  --color-success: #16a34a;
+  --color-success-dark: #166534;
+  
+  /* Color - Warning */
+  --color-warning-light: #fef9c3;
+  --color-warning: #eab308;
+  --color-warning-dark: #a16207;
+  
+  /* Color - Danger */
+  --color-danger-light: #fee2e2;
+  --color-danger: #ef4444;
+  --color-danger-dark: #991b1b;
+  
+  /* Color - Grays */
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-50: hsl(210, 40%, 98%);
+  --color-gray-100: hsl(210, 40%, 96%);
+  --color-gray-200: hsl(214, 32%, 91%);
+  --color-gray-300: hsl(213, 27%, 84%);
+  --color-gray-400: hsl(215, 20%, 65%);
+  --color-gray-500: hsl(215, 16%, 47%);
+  --color-gray-600: hsl(215, 19%, 35%);
+  --color-gray-700: hsl(215, 25%, 27%);
+  --color-gray-800: hsl(217, 33%, 17%);
+  --color-gray-900: hsl(222, 47%, 11%);
+  --color-black: hsl(0, 0%, 0%);
+
+  /* Font Sizes - https://royalfig.github.io/fluid-typography-calculator/ */
+  --font-size-0: 0.875rem;
+  --font-size-2: 1rem;
+  --font-size-4: 1.25rem;
+  --font-size-6: 1.5rem;
+  --font-size-8: 1.75rem;
+  --font-size-10: 2rem;
+  
+  /* Font Weights */
+  --font-weight-0: 100;
+  --font-weight-2: 200;
+  --font-weight-4: 400;
+  --font-weight-6: 600;
+  --font-weight-8: 700;
+  --font-weight-10: 800;
+}
